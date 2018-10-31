@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript</title>
+</head>
+<body>
+<script>
+/*var some_number=3
+console.log(some_number)
+console.log(typeof some_number)
+console.log(typeof(some_number))*/
+/*var some_number=77.1234
+console.log(some_number)
+console.log(some_number.toExponential())
+console.log(some_number.toExponential(4))
+console.log(some_number.toExponential(2)*/
+/*var some_number=77.1234
+console.log(some_number)
+console.log(some_number.toString())
+console.log(some_number.toString(16))
+console.log(typeof some_number.toString())*/
+/*console.log((10).toString()*/
+/*var some_number=12345.6789
+console.log(some_number.toFixed())
+console.log(some_number.toFixed(1))
+console.log(some_number.toFixed(6))
+console.log((1.23e+10).toFixed(2))
+console.log((1.23e-10).toFixed(2)*/
+/*console.log(MAX_VALUE)
+console.log(MIN_VALUE)*/
+/*console.log(2e-1)
+console.log(3e3)
+console.log(7.39e2)
+console.log(33e-1)
+console.log(typeof 77.123456)
+console.log(typeof 1)
+console.log(typeof Infinity)
+console.log(typeof NaN)
+console.log(7.1.toExponential())
+console.log(0.000009.toExponential())
+console.log(33.3.toExponential())
+console.log(10.001.toExponential())
+console.log(1.23456789.toExponential(5))
+console.log(1.23456789.toExponential(1))
+console.log(1.23456789.toExponential(4))
+console.log(1.23456789.toExponential(1))
+console.log(1.23456789.toExponential(4))
+console.log(1.23456789.toExponential(2))
+console.log(typeof 5.0.toString)
+console.log(typeof 5.0.toString())
+console.log(typeof 77.12345.toString())
+console.log(typeof 0.1.toString())
+console.log(typeof 1e1.toString())
+console.log(12345.789.toFixed())
+console.log(12345.789.toFixed(1))
+console.log(1.23e+1.toFixed(1))
+console.log(1.23e+10.toFixed(2))
+console.log(1.23e+10.toFixed(6))
+console.log(1.23e-10.toFixed(1))
+console.log(1.23e-10.toFixed())
+console.log(1.23e-10.toFixed(2))
+console.log(1.23e+10.toFixed(1))
+console.log(1.23e+10.toFixed(6))
+console.log(1.23e-10.toFixed(1))
+console.log(1.23e-10.toFixed())
+console.log(1.23e-10.toFixed(2))
+console.log(1.23e-10.toFixed(6))
+console.log(Number.MIN_VALUE)
+console.log(Number.MAX_VALUE)
+console.log(Number.MAX_VALUE)
+console.log(Number.NAN)
+console.log(Number.POSITIVLE_INFINITY)
+console.log(Number.NEGATIVE_INFINITY)
+console.log(2e-1.toFixed(1))
+console.log(2e-1.toFixed(12))
+console.log(3e3.toFixed(1))
+console.log(7.39e2.toFixed(1))
+console.log(33e-1.toFixed(1))*/
+/*console.log(Math.acos(1))/*арккосинус в радианах
+ console.log(Math.asin(1))/*арксинус в радианах
+ console.log(Math.atan(1))/*арктангенс в радианах
+ console.log(Math.atan2(1, 2))/*#арктангенс 2х переменных
+ console.log(Math.exp(2))/*e в степени 3
+ console.log(Math.min(1, 2, 3, 2e-4))/*выбор минимальнога значения
+ console.log(Math.random())/*случайное число
+ console.log(Math.sqrt(3))/*квадратный корень
+ console.log(Math.log(3))/*логарифм 3 по основанию e
+ console.log(Math.round(3.3))/*округление к ближайшему
+ console.log(Math.floor(3.8))/*оругление к меньшему, т.е. к 3
+ console.log(Math.ceil(4.3))/*округление к большему, т.е. к 4
+ console.log(Math.sin(124))
+ console.log(Math.cos(111))
+ console.log(Math.tan(165))
+ console.log(Math.pow(4, 5))/*возведение в степень
+ console.log(Math.max(1, 6, 2, 2e-4))
+ console.log(Math.abs(-1))
+ console.log(Math.E)
+ console.log(Math.LOG2E)
+ console.log(Math.LOG10E)
+ console.log(Math.PI)
+ console.log(Math.SQRT1_2)
+ console.log(Math.SQRT2)
+ console.log(Math.LN10)*/
+ /*console.log("Привет\n Мир")
+ var word=("Программирование")
+ console.log("Длинна слова"+word+word.length)
+ var A="Азиз"
+ var B="Хайбуллаев"
+ var C="Ленурович"
+ var a=A.length+B.length+C.length
+ console.log("длинна имени равна " + A.length)
+  console.log("длинна фамилии равна " + B.length)
+   console.log("длинна отчества равна " + C.length)
+   console.log("Длинна ФИО равна")
+   var word="Программирование"
+   console.log("<1-й символ в слове Программирование-"+word.charAt(0))
+   console.log("2-й символ в слове Программирование"+word[1])
+   console.log("3-й символ в слове Программирование-"+word.charAt(word.length-1))*/
+   var A= "Шла Саша по шоссе"
+   console.log(A[0]+A[1])
+   console.log(A[A.length-2]+A[A.length-1])
+   var word="программирование"
+   console.log(word.toUpperCase())
+   var word="ПРОГРАММИРОВАНИЕ"
+   console.log(word[0].toLowerCase())
+   console.log(A.indexOf("ш",3))
+   console.log(A.indexOf(" "))
+   console.log(A.indexOf("шоссе",5))
+   console.log(A.slice(2,-3))
+   var str="Вася,учи программирование!"
+   var newStr=str[0].toUpperCase()+str.slice(1,str.length)
+console.log(newStr)
+var A="Шла саша по шоссе"
+var B= A.slice(4,8)
+var C=A[4].toUpperCase()+A.slice(5,8)
+console.log(C)
+var B="Не хочу учится а хочу женится"
+var D=B.slice(0, 12)+"ь"+B.slice(12, -2)+"ь"+B.slice(-2,B.length)
+console.log(D)
+</script>
+</body>
+</html>
