@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript</title>
+</head>
+<body>
+<script>
+/*  console.log("Лабараторная 2")
+  console.log("Переменные; Упражнение 1")
+  var fn = "Aziz "
+var ln = "Haibullaev"
+var fun = fn+ln
+console.log (fun)
+console.log("Упражнение2")
+var a="Программирование";
+console.log(a);
+console.log("Упражнение 3")
+var name, admin;
+name = 'Aziz';
+admin = name;
+console.log (admin);
+console.log("Упражнение 4")
+var a=1000, b=5, c
+c = a;
+a = b;
+b = c;
+console.log (a, b)
+  console.log("Упражнение 1; Типы данных")
+  console.log(12e4)
+  console.log(0e-5)
+  console.log(123e-3)
+  console.log(0xc8)
+  console.log(0xfa)
+  console.log("Упражнение 2")
+  var some_number = 77.1234
+console.log(some_number)
+console.log(some_number.toExponential())
+console.log(some_number.toExponential(6))
+console.log(some_number.toExponential(3))
+var some_number = 77.1234
+console.log(some_number)
+console.log(some_number.toString())
+console.log(some_number.toString(10))
+console.log(typeof some_number.toString())
+console.log((10).toString())
+//Упражнение 6
+var some_number = 12345.6789
+console.log(some_number.toFixed())
+console.log(some_number.toFixed(1))
+console.log(some_number.toFixed(6))
+console.log((1.23e+10).toFixed(2))
+console.log((1.23e-10).toFixed(2))
+//Упражнение 5
+var some_number = 77.123456789
+console.log(some_number.toPrecision(6))
+
+console.log("Свойства;Код")
+//Упражнение 1
+Number.MAX_VALUE
+Number.MIN_VALUE
+console.log('Math');
+Math.max(12,45,78,123,7)
+Math.acos(1)
+console.log(Math.asin(155));
+console.log(Math.atan(4));
+console.log(Math.atan2(32, 2));
+console.log(Math.exp(15));
+console.log(Math.sin(75));
+console.log(Math.min(454, 1000, 271,3253));
+console.log(Math.random());
+console.log(Math.sqrt(155));
+console.log(Math.cos(90));
+console.log(Math.round(765.29));
+console.log(Math.floor(43));
+console.log(Math.ceil(13));
+console.log(Math.tan(12));
+console.log(Math.pow(13, 76));
+console.log(Math.max(1, 32, 30, 322, 442));
+console.log(Math.abs(22));
+console.log("Лабараторная 3")
+// Упражнение 1
+var a = 77.123456
+var b = 1
+var c = Infinity
+var d = NaN
+console.log(a, b, c, d)
+console.log(typeof a, b, c, d)
+//Упражнение 2
+var a = 2e-1
+var b = 3e3
+var c = 7.29e2
+var d = 33e-1
+console.log(a.toFixed(10))
+console.log(b.toFixed(10))
+console.log(c.toFixed(10))
+console.log(d.toFixed(10))
+//Упражнение 5
+var a = 5
+var b = 77.12345
+var c = 0.1
+var d = 1e1
+console.log(a.toString())
+console.log(b.toString())
+console.log(c.toString())
+console.log(d.toString())
+console.log(typeof a.toString())
+console.log(typeof b.toString())
+console.log(typeof c.toString())
+console.log(typeof d.toString())
+//Упражнение 3
+var a = 7.1
+var b = 0.000009
+var c = 33.3
+var d = 10.001
+console.log(a.toExponential())
+console.log(b.toExponential())
+console.log(c.toExponential())
+console.log(d.toExponential())
+//Упражнение 4
+var a = 1.23456789
+console.log(a.toExponential(5))
+console.log(a.toExponential(1))
+console.log(a.toExponential(4))
+console.log(a.toExponential(2))
+//Упражнение 6
+var a = 12345.6789
+var b = 1.23e+10
+var c = 1.23e-10
+// 1 to Fixed без параметров
+console.log(a.toFixed())
+console.log(b.toFixed())
+console.log(c.toFixed())
+// 2 to Fixed с параметрами 1, 2, 6.
+console.log(a.toFixed(1))
+console.log(a.toFixed(2))
+console.log(a.toFixed(6))
+console.log(b.toFixed(1))
+console.log(b.toFixed(2))
+console.log(b.toFixed(6))
+console.log(c.toFixed(1))
+console.log(c.toFixed(2))
+console.log(c.toFixed(6))
+// 3; toPrecision без параметров
+console.log(a.toPrecision())
+console.log(b.toPrecision())
+console.log(c.toPrecision())
+// 4; toPrecision с параметрами 1, 2, 6.
+console.log(a.toPrecision(1))
+console.log(a.toPrecision(2))
+console.log(a.toPrecision(6))
+console.log(b.toPrecision(1))
+console.log(b.toPrecision(2))
+console.log(b.toPrecision(6))
+console.log(c.toPrecision(1))
+console.log(c.toPrecision(2))
+console.log(c.toPrecision(6))
+Number.MIN_VALUE
+Number.MAX_VALUE
+Number.NAN
+Number.POSITIVE_INFINITY
+Number.NEGATIVE_INFINITY
+//Primer 1
+// Упражнение 1
+var a = "Haibullaev "
+var b = "Aziz "
+var c = "Lenurovich "
+console.log ("Фамилия: " + a + "В этом слове: " + a.length + "букв","Имя: " + b  + "В этом слове: " + b.length + "букв","Отчество: " + c + " В этом слове: " + c.length + "букв")
+//Упражнение 2
+var a = "Шла Саша по шоссе"
+console.log ("Первые две буквы  " + a.charAt (0) + a.charAt (1) )
+console.log ("Две последние буквы  " + a.charAt (15) + a.charAt (16) )
+//Упражнение 3
+var a = "Programming"
+console.log(a.toUpperCase());
+console.log(a.toUpperCase(1));
+// Упражнение 4
+var word="Программирование"
+console.log("<1-й символ в слове Программирование-"+word.charAt(0))
+console.log("2-й символ в слове Программирование"+word[1])
+console.log("3-й символ в слове Программирование-"+word.charAt(word.length-1))
+// Упражнение 5
+var a = "Шла Саша по шоссе"
+a.indexOf("Шла")
+a.indexOf("шоссе", 5)
+// Упражнение 6
+var a = "шла Саша по шоссе"
+var anew = a[0].toUpperCase( )+a.slice(1,a.length)
+console.log(anew)
+// Упражнение 7
+var B="Не хочу учится а хочу женится"
+var D=B.slice(0, 12)+"ь"+B.slice(12, 14)+','+B.slice(14, -2)+"ь"+B.slice(-2,B.length)
+console.log(D)
+console.log('Лабараторная 4')
+//Упражнение 1
+var Numbers = [0, 1, 2, 3, 4]
+ console.log('[0, 1, 2, 3, 4]');
+ console.log('Выводим в консоль значения 2-го и предпоследнего: ', Numbers[1], ',', Numbers.length-2);
+ console.log('Размер массива = ', Numbers.length);
+ // Упражнение 2
+ var Letters = ["Мерседес", "Шкода", "Тойота", "Ниссан", "Мазда"];
+   console.log(["Мерседес", "Шкода", "Тойота", "Ниссан", "Мазда"]);
+   [Letters[0], Letters[2]] = [Letters[2], Letters[0]];
+   console.log(Letters);
+   // Упражнение 3
+   var A = [Math.random(), Math.random(), Math.random()]
+ console.log(A);
+// Упражнение 4
+var A = [Math.random(), Math.random(), Math.random()]
+ console.log(A)
+ A.push(100), A.unshift(100)
+ console.log(A)
+ A.shift(), A.pop()
+ console.log(A);
+ A.length = 0
+ console.log(A);
+ // Упражнение 5
+ var colors = [" white "," blue "," yellow "]
+  console.log(colors.join(','));
+  console.log(colors.join('и'));
+  console.log(colors.join('или'));
+  console.log(colors.join(','));
+  console.log(colors.join(':'));
+  console.log(A);
+  A.length = 0
+// Упражнение 6
+var colors = ["white", "blue", "yellow"]
+var numbers = [1, 2, 3]
+var colorNumber = colors.concat(numbers)
+console.log(colors);
+console.log(colorNumber);
+// Упражнение 7
+var arr = [1,2,3,4,5,6]
+  console.log(arr.slice(1));
+  console.log(arr.slice(1,4));
+  console.log(arr.slice(3,4));
+  console.log(arr.slice(-2));
+  console.log(arr.slice(arr.length-2));
+  console.log(arr.slice(-3,-1));
+  console.log(arr.slice(arr.length-3,arr.length-1));
+// Упражнение 8
+var colors = ["white","yellow" ,"blue",]
+    console.log(colors);
+    colors.reverse()
+    console.log(colors);
+    colors.sort()
+    console.log(colors);
+// Упражнение 9
+var arr = [1,2,3,4,5,6]
+    arr.splice(3,2)
+    console.log(arr)
+    arr.splice(-5,2)
+    console.log(arr)
+    arr.splice(2,0,7)
+    console.log(arr)
+console.log('Лабараторная 5');
+// Упражнение 2
+var a = [7, 2, 4]
+console.log (a[0]*a[1]*a[2])
+console.log (a[0]+a[1]+a[2])
+var aa=a.length
+console.log(a[a.length-1]%++aa);
+// Упражнение 1
+var Numbers =[1,2,3,4,5]
+console.log(Numbers[1],Numbers[Numbers.length-2],Numbers.length);
+console.log("")
+// Упражнение 3
+var a = 9
+var b = 5
+var c = 6
+var d = (a+b+c)/2
+var j = Math.sqrt (d*(d-a)*(d-b)*(d-c))
+console.log("the result is", j);
+// Упражнение 4
+var a=4, b;
+console.log(b = 4*a++); x=4;
+console.log(b = 4*++a); x=4
+console.log(b = 4*a--); x=4;
+console.log(b = 4*--a);
+// Упражнение 5
+var z = 2;
+console.log(z *= 2 + 5);
+var a=3, c = 2+ ++a;
+console.log(a=a+c);
+var a=3, c = 2+a++
+console.log(a=a+c);
+console.log ('Лабараторная 6')
+// Упражнение 0
+var question = prompt('В каком году ты поступил в КИПУ?','')
+if(question !=2017)alert('Не правильно!')
+var question = prompt('В каком году ты поступил в КИПУ?','')
+if(question !=2017)
+  alert('Не правильно!')
+  alert('Спроси у Ахтема!')
+  var question=prompt('В каком году потупил в КИПУ?','')
+  if(question != 2017)
+  alert('Не правильно!')
+  else
+  alert('Привет первокурсник!')
+  // Упражнение 1
+  var A= prompt("Назови число А.","")
+  var B= prompt("Назови число B.","")
+  var C
+  if( A>B)
+   C=A
+  else
+   C=B
+  alert(C)
+  // Упражнение 2
+  var X= prompt("Назови число X.","")
+  var Y= prompt("Назови число Y.","")
+  var C
+  if (X>Y)
+  {C=X; X=Y; Y=C;}
+  alert(X+','+Y)
+  console.log("")
+//Упражнение 7
+var num1 = +prompt("enter num1","")
+var sign = prompt("enter sign","")
+var num2 = +prompt("enter num2",""), result
+if(sign == "+"){
+  result =num1+num2
+  alert(result);
+}
+else
+  if (sign == "-"){
+    result = num1 - num2
+    alert(result)
+  }
+  else if (sign == "*" ){
+    result = num1*num2
+    alert(result)
+  }
+  else
+    if (sign == "/" ){
+      if (num2 != 0){
+      result = num1/num2
+      alert(result)
+      }
+      else{
+        alert("error: division by zero")
+    }
+}*/
+console.log("Лабараторная 7")
+  var question = prompt ('В каком году ты поступил в КИПУ?','')
+  var question2 = prompt("Как вас зовут?","")
+      if (!(question==2017 || question2 =='Иван')){
+        alert('Правильно !')}
+          else {
+            alert ('Не правильно!')
+        }
+//Упражнение 8
+  var value= prompt('Введи число','')
+    alert((value==1000))   ? 'Верно' : 'Не верно'
+  console.log('')
+</script>
+</body>
+</html>
